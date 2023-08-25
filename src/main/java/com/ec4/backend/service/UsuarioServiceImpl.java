@@ -40,9 +40,4 @@ public class UsuarioServiceImpl implements UsuarioService{
 		usuarioDAO.deleteById(Id);
 	}
 
-    // @Override
-    // @Transactional(readOnly = true)
-    // public Usuario findbyUserAndPassword(String user, String password) {
-    //     return usuarioDAO.findbyUserAndPassword(user, password);
-    // }	
 }

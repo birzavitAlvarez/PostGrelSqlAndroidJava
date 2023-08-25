@@ -14,7 +14,7 @@ import java.util.*;
 
 @CrossOrigin(origins = "*") 
 @RestController
-@RequestMapping("/api/usuario")
+@RequestMapping("/api/usuarioservice")
 public class UsuarioController {
     
     @Autowired
@@ -61,11 +61,11 @@ public class UsuarioController {
 	}
 
 	/*
-{
+	{
     "id": 2,
     "user": "gato",
     "password": "123"
-}
+	}
 	 */
 	
 	@PutMapping("/{id}")

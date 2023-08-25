@@ -10,5 +10,4 @@ public interface UsuarioService {
 	public Optional<Usuario> findById(Integer id);
 	public void save(Usuario usuario);
     public void deleteById(Integer id);
-    // public Usuario findbyUserAndPassword(String user, String password);
 }
