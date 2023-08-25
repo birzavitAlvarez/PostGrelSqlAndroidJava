@@ -1,0 +1,65 @@
+@subdominio = ec-2-serviciosweb
+
+##############################
+# Requests SIN base de datos #
+##############################
+
+###
+# 1: Mostrar su código IDAT y su nombre en el siguiente formato: CÓDIGO - NOMBRE
+GET https://{{subdominio}}.onrender.com
+
+###
+# 2: Mostrar su código IDAT
+GET https://{{subdominio}}.onrender.com/idat/codigo
+
+###
+# 3: Mostrar su nombre completo
+GET https://{{subdominio}}.onrender.com/idat/nombre-completo
+
+
+
+##############################################
+#         Requests CON base de datos         #
+##############################################
+# Tabla: cursos:                             #
+#   - id: int (strategy=GenerationType.AUTO) #
+#   - nombre: string                         #
+#   - creditos: int                          #
+##############################################
+
+
+###
+# 4: Listar cursos
+GET https://{{subdominio}}.onrender.com/api/curso/listar HTTP/1.1
+
+###
+# Por id
+GET https://{{subdominio}}.onrender.com/api/curso/get/2 HTTP/1.1
+
+###
+# 5: Nuevo Curso
+POST https://{{subdominio}}.onrender.com/api/curso/nuevo HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "DSW1",
+    "creditos": 2
+}
+
+###
+# ACTUALIZAR
+PUT https://{{subdominio}}.onrender.com/api/curso/actualizar/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 2,
+    "nombre": "DSW1 UPDATE!!!",
+    "creditos": 2
+}
+
+###
+# 6: Eliminar Curso
+DELETE https://{{subdominio}}.onrender.com/api/curso/eliminar/2 HTTP/1.1
+
+
+###

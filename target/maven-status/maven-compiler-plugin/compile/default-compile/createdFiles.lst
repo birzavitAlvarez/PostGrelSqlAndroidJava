@@ -1,0 +1,13 @@
+com\ec4\backend\BackendApplication.class
+com\ec4\backend\service\UsuarioService.class
+com\ec4\backend\controller\GatoController.class
+com\ec4\backend\DTO\UsuarioDTO.class
+com\ec4\backend\DAO\GatoDAO.class
+com\ec4\backend\DAO\UsuarioDAO.class
+com\ec4\backend\entity\Gato.class
+com\ec4\backend\entity\Usuario.class
+com\ec4\backend\service\GatoService.class
+com\ec4\backend\service\GatoServiceImpl.class
+com\ec4\backend\DTO\GatoDTO.class
+com\ec4\backend\controller\UsuarioController.class
+com\ec4\backend\service\UsuarioServiceImpl.class
